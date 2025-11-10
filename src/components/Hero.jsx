@@ -2,13 +2,12 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <div className='w-full h-[calc(100vh-4rem)] flex items-center justify-center gap-1.5'>
-            <div className='max-w-150 min-h-70 flex flex-col items-center p-5'>
+        <div className='w-full min-h-screen flex items-center justify-center gap-1.5'>
+            <div className='pt-auto max-w-150 min-h-70 flex flex-col items-center p-5'>
 
                 {/* NAME */}
-                <div className="flex flex-col md:flex-row md:gap-2 text-4xl sm:text-5xl font-serif font-medium mb-4">
-                    <span className="text-zinc-300">Hello, I am</span>
-                    <span className="text-yellow-600 md:ml-2">Harleen Kaur</span>
+                <div className="flex justify-items-center  md:gap-2 text-5xl sm:text-7xl font-serif font-medium mb-4">
+                    <p className="text-zinc-400">Hello, I am Harleen Kaur</p>
                 </div>
 
                 {/* DESCRIPTION */}
@@ -16,7 +15,7 @@ const Hero = () => {
 
                 {/* SOCIALS */}
                 <ul className="flex gap-4 mt-6 text-zinc-400">
-                    <li className="border border-zinc-800 p-2 rounded-full hover:text-yellow-600 hover:border-yellow-600 transition">
+                    <li className="p-2 rounded-full hover:text-white hover:scale-105 transition-all duration-300">
                         <a
                             href="https://www.linkedin.com/in/harleenkaur857/"
                             target="_blank"
@@ -25,7 +24,7 @@ const Hero = () => {
                             <Linkedin />
                         </a>
                     </li>
-                    <li className="border border-zinc-800 p-2 rounded-full hover:text-yellow-600 hover:border-yellow-600 transition">
+                    <li className="p-2 rounded-full hover:text-white hover:scale-105 transition-all duration-300">
                         <a
                             href="https://github.com/harleenkaur13"
                             target="_blank"
@@ -34,7 +33,7 @@ const Hero = () => {
                             <Github />
                         </a>
                     </li>
-                    <li className="border border-zinc-800 p-2 rounded-full hover:text-yellow-600 hover:border-yellow-600 transition">
+                    <li className="p-2 rounded-full hover:text-white hover:scale-105 transition-all duration-300">
                         <a href="#" target="_blank" rel="noreferrer">
                             <Twitter />
                         </a>

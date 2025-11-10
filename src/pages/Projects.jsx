@@ -1,65 +1,84 @@
-import project1 from "../assets/project1.jpg"
-import project2 from "../assets/project2.webp"
-import project3 from "../assets/project3.webp"
+import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project2.webp";
+import project3 from "../assets/project3.webp";
+import { CometCard } from "../components/ui/comet-card";
 
 const Projects = () => {
-
   const projects = [
     {
       title: "Ember",
       year: "2025",
       image: project1,
-      github: ""
+      github: "https://github.com/your-repo-ember",
     },
     {
       title: "ToDo",
       year: "2025",
       image: project2,
-      github: ""
+      github: "https://github.com/your-repo-todo",
     },
     {
       title: "Sentiment Analysis",
       year: "2025",
       image: project3,
-      github: ""
+      github: "https://github.com/your-repo-sentiment",
     },
   ];
 
   return (
-    <div className='min-h-screen text-white flex flex-col'>
-
+    <div className="min-h-screen text-white flex flex-col items-center">
       {/* HEADING */}
-      <div className='h-20 flex justify-center items-end mb-6 md:mb-20'>
-        <h1 className='text-4xl font-serif text-amber-500'>Projects</h1>
+      <div className="pt-35 h-20 flex justify-center items-end mb-3 md:mb-6">
+        <h1 className="text-4xl font-serif text-white">Projects</h1>
       </div>
 
       {/* Project Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl w-full justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl w-full justify-items-center my-0">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white text-black w-[250px] rounded-md shadow-lg hover:shadow-2xl transition-transform hover:-translate-y-2"
-          >
-            <a href={project.github} target="_blank">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-60 object-cover"
-              />
-            </a>
-            <div className="p-5 flex flex-col items-center">
-              <span className="bg-gray-500 text-white text-xs px-3 py-1 rounded-md mb-2">
-                {project.year}
-              </span>
-              <h3 className="font-semibold tracking-wider text-lg text-center">
-                {project.title}
-              </h3>
-            </div>
-          </div>
+          <CometCard key={index}>
+            <button
+              type="button"
+              className="bgflex w-80 cursor-pointer flex-col items-stretch bg-[#1F2121] rounded-2xl border-0
+              p-4 transition-transform"
+              aria-label={`View project ${project.title}`}
+              style={{
+                transformStyle: "preserve-3d",
+                transform: "none",
+                opacity: 1,
+              }}
+              onClick={() => window.open(project.github, "_blank")}
+            >
+              <div className="mx-2 flex-1">
+                <div className="relative mt-2 aspect-3/4 w-full">
+                  <img
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full rounded-2xl object-cover contrast-75"
+                    alt={project.title}
+                    src={project.image}
+                    style={{
+                      boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                      opacity: 1,
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div className="mt-2 flex shrink-0 items-center justify-between p-4 font-mono text-white">
+                <div className="text-lg font-semibold">{project.title}</div>
+                <div className="text-md text-gray-300 opacity-70">
+                  {project.year}
+                </div>
+              </div>
+            </button>
+          </CometCard>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
+
+
+// grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl w-full justify-items-center my-0 bg-red-800
+
