@@ -10,8 +10,8 @@ import {
 import { cn } from "@/lib/utils";
 
 export const CometCard = ({
-  rotateDepth = 5.5,
-  translateDepth = 10,
+  rotateDepth = 5,
+  translateDepth = 8,
   className,
   children
 }) => {
@@ -73,9 +73,9 @@ export const CometCard = ({
         }}
         initial={{ scale: 0.8, z: 0 }}
         whileHover={{
-          scale: 0.85,
+          scale: 0.81,
           z: 50,
-          transition: { duration: 0.2 },
+          transition: { duration: 0.4 },
         }}
         className="relative rounded-2xl">
         {children}

@@ -1,38 +1,68 @@
-import copy from "../assets/copy.jpg"
+import {
+  SiC,
+  SiCplusplus,
+  SiJavascript,
+  SiPython,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiReact,
+  SiVite,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiGit,
+  SiGithub
+} from "react-icons/si";
+
+import SkillsRow from "../components/SkillsRow";
+
+const tileClass =
+  "w-16 h-16 sm:w-20 sm:h-20 bg-zinc-900/80 backdrop-blur-md rounded-xl flex items-center justify-center shadow-lg shadow-black/30";
 
 const About = () => {
   return (
-    <div className='min-h-screen text-white flex flex-col'>
+    <div className="min-h-screen text-white flex flex-col items-center">
 
       {/* HEADING */}
-      <div className='pt-35 h-20 flex justify-center items-end mb-6 md:mb-20'>
-        <h1 className='text-4xl font-serif text-white'>About Me</h1>
+      <div className="pt-28 sm:pt-32 mb-6 sm:mb-10">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white">About Me</h1>
       </div>
 
-      {/* CONTENT */}
-      <div className='flex flex-col md:flex-row items-center md:items-start gap-10 md:px-60'>
-
-        {/* LEFT SIDE */}
-        <div className='flex justify-center md:justify-end w-full md:w-2/5'>
-          <div className='rounded-md object-cover w-64 h-64 md:w-80 md:h-80'>
-            <img loading="lazy" className='object-cover rounded-sm' src={copy} alt="Profile" />
-          </div>
-        </div>
-
-        {/* RIGHT SIDE */}
-        <div className='flex flex-col mt-15 px-7 md:mt-0 w-full md:w-3/5 text-center md:text-left md:py-5 md:pl-7'>
-          <div className="flex flex-col">
-            <div className="text-2xl font-serif text-zinc-400 mb-1.5">Hi There! I'm Harleen</div>
-            <div className="text-xl text-white">Aspiring Software Engineer</div>
-            <div className="text-sm text-zinc-400 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam a veniam ullam. Voluptates a eaque laboriosam reprehenderit magni? Voluptas, voluptatibus praesentium! Mollitia quae, tempore libero illum quam similique nemo saepe, modi nostrum tenetur eveniet nulla sint sit ex molestias consequatur minus! Autem, labore magnam consequuntur facilis saepe error modi recusandae.</div>
-            <div>
-            <button className="bg-zinc-800 text-zinc-400 px-4 py-2 rounded-md mt-5 self-center md:self-start hover:text-zinc-300 transition hover:cursor-pointer hover:scale-102">Resume</button>
-            </div>
-          </div>
-        </div>
+      {/* PARAGRAPH */}
+      <div className="max-w-2xl sm:max-w-3xl text-center text-zinc-300 leading-relaxed mb-10 sm:mb-16 px-35 sm:px-2">
+        <p className="text-sm sm:text-base">
+          I'm Harleen, an aspiring software engineer passionate about building
+          modern web applications. I love solving problems, designing elegant
+          interfaces, and continuously learning technologies to improve my craft.
+        </p>
       </div>
+
+      {/* SKILLS SECTION */}
+      <div className="w-full max-w-6xl flex flex-col gap-10 sm:gap-14">
+
+        <SkillsRow>
+          <div className={tileClass}><SiC className="text-4xl text-blue-400" /></div>
+          <div className={tileClass}><SiCplusplus className="text-4xl text-blue-500" /></div>
+          <div className={tileClass}><SiJavascript className="text-4xl text-yellow-400" /></div>
+          <div className={tileClass}><SiPython className="text-4xl text-blue-300" /></div>
+          <div className={tileClass}><SiHtml5 className="text-4xl text-orange-500" /></div>
+          <div className={tileClass}><SiCss3 className="text-4xl text-blue-500" /></div>
+          <div className={tileClass}><SiTailwindcss className="text-4xl text-cyan-400" /></div>
+          <div className={tileClass}><SiReact className="text-4xl text-cyan-300" /></div>
+          <div className={tileClass}><SiVite className="text-4xl text-purple-400" /></div>
+          <div className={tileClass}><SiNodedotjs className="text-4xl text-green-500" /></div>
+          <div className={tileClass}><SiExpress className="text-4xl text-gray-300" /></div>
+          <div className={tileClass}><SiMongodb className="text-4xl text-green-600" /></div>
+          <div className={tileClass}><SiGit className="text-4xl text-red-500" /></div>
+          <div className={tileClass}><SiGithub className="text-4xl text-white" /></div>
+        </SkillsRow>
+
+      </div>
+
+      <div className="h-20" />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

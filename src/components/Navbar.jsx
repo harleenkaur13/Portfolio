@@ -49,7 +49,7 @@ const Navbar = () => {
             scrolled ? "shadow-md shadow-black/40" : ""
           }`}
         >
-          {["home", "about", "skills", "projects", "contact"].map((item) => (
+          {["home", "about", "projects", "contact"].map((item) => (
             <li key={item}>
               <Link
                 to={item}
@@ -89,7 +89,7 @@ const Navbar = () => {
           transition={{ duration: 0.4 }}
           className="flex flex-col items-center bg-black text-zinc-400 py-4 md:hidden"
         >
-          {["home", "about", "skills", "projects", "contact"].map((item) => (
+          {["home", "about", "projects", "contact"].map((item) => (
             <li key={item} className="py-2">
               <Link
                 to={item}

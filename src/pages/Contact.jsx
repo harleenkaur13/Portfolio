@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="min-h-screen flex flex-col items-center px-4 md:gap-10">
       {/* Heading */}
       <div className="pt-35 h-20 flex justify-center items-end mb-6 md:mb-16">
-        <h1 className="text-4xl font-serif text-white">Contact Me</h1>
+        <h1 className="text-4xl md:text-5xl font-serif text-white">Contact Me</h1>
       </div>
 
       {/* Main content */}

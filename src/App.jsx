@@ -2,7 +2,6 @@ import bgImage from "./assets/bgImage.jpg";
 import Spotlight from "./components/Spotlight";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import "./index.css"

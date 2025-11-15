@@ -29,7 +29,7 @@ const Projects = () => {
     <div className="min-h-screen text-white flex flex-col items-center">
       {/* HEADING */}
       <div className="pt-35 h-20 flex justify-center items-end mb-3 md:mb-6">
-        <h1 className="text-4xl font-serif text-white">Projects</h1>
+        <h1 className="text-4xl md:text-5xl font-serif text-white">Projects</h1>
       </div>
 
       {/* Project Cards Grid */}
