@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-700">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 flex items-center justify-between h-16 transition-all duration-700">
-        
+
         {/* LOGO (we keep its space even when faded out) */}
         <motion.div
           className="flex items-center gap-2 text-xl text-white w-[150px]" // fixed width keeps layout stable
@@ -45,9 +45,8 @@ const Navbar = () => {
             x: scrolled ? 0 : 0, // stable positioning
           }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className={`hidden md:flex gap-8 text-sm text-zinc-400 items-center transition-all duration-700 ${
-            scrolled ? "shadow-md shadow-black/40" : ""
-          }`}
+          className={`hidden md:flex gap-8 text-sm text-zinc-400 items-center transition-all duration-700 ${scrolled ? "shadow-md shadow-black/40" : ""
+            }`}
         >
           {["home", "about", "projects", "contact"].map((item) => (
             <li key={item}>
@@ -65,8 +64,16 @@ const Navbar = () => {
           ))}
         </motion.ul>
 
-        {/* Placeholder div to balance flex layout (prevents jump) */}
-        <div className="w-[150px] md:block hidden"></div>
+        <motion.div
+          className="text-zinc-400 max-w-[150px]"
+          animate={{ opacity: scrolled ? 0 : 1, y: scrolled ? -10 : 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+        >
+          {/* <span className="font-semibold">Harleen</span> */}
+          <button
+            onClick={() => window.open('/resume.pdf', '_blank')}
+            className="bg-zinc-800 px-3 py-1 rounded-sm hover:bg-transparent hover:border hover:border-zinc-500 transition-all duration-500">Resume</button>
+        </motion.div>
 
         {/* MOBILE MENU BUTTON (visible only when not scrolled) */}
         {!scrolled && (

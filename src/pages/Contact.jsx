@@ -24,13 +24,13 @@ const Contact = () => {
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-6 text-zinc-400">
             <a
-              href="mailto:youremail@example.com"
+              href="mailto:sainiharleenkaur123@gmail.com"
               className="hover:text-white hover:scale-105 transition-all duration-300"
             >
               <Mail size={26} />
             </a>
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/harleenkaur13"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white hover:scale-105 transition-all duration-300"
@@ -38,7 +38,7 @@ const Contact = () => {
               <Github size={26} />
             </a>
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://www.linkedin.com/in/harleenkaur857/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white hover:scale-105 transition-all duration-300"

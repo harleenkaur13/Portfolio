@@ -64,8 +64,8 @@ const Projects = () => {
               </div>
 
               <div className="mt-2 flex shrink-0 items-center justify-between p-4 font-mono text-white">
-                <div className="text-lg font-semibold">{project.title}</div>
-                <div className="text-md text-gray-300 opacity-70">
+                <div className="text-xl font-semibold">{project.title}</div>
+                <div className="text-l text-gray-300 opacity-70">
                   {project.year}
                 </div>
               </div>

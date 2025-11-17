@@ -32,9 +32,13 @@ const About = () => {
       {/* PARAGRAPH */}
       <div className="max-w-2xl sm:max-w-3xl text-center text-zinc-300 leading-relaxed mb-10 sm:mb-16 px-35 sm:px-2">
         <p className="text-sm sm:text-base">
-          I'm Harleen, an aspiring software engineer passionate about building
-          modern web applications. I love solving problems, designing elegant
-          interfaces, and continuously learning technologies to improve my craft.
+          Hi, I'm Harleen - a pre-final year Data Science and Engineering student at NIT Jalandhar who genuinely enjoys learning in a calm, steady, and meaningful way.
+
+          I love creating web development projects that feel clean and intuitive, and I find joy in solving DSA problems, not just for practice but for the clarity and discipline they bring.
+
+          Right now, I'm exploring Computer Vision, understanding how machines interpret the world, and slowly building my skills one concept at a time.
+          
+          Every day, I try to become a little better—through curiosity, consistency, and thoughtful work.
         </p>
       </div>
 
