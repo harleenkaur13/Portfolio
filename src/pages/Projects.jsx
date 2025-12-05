@@ -1,6 +1,6 @@
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.webp";
-import project3 from "../assets/project3.webp";
+import project1 from "../assets/ember1.png";
+import project2 from "../assets/lp.png";
+import project3 from "../assets/image.png";
 import { CometCard } from "../components/ui/comet-card";
 
 const Projects = () => {
@@ -9,10 +9,10 @@ const Projects = () => {
       title: "Ember",
       year: "2025",
       image: project1,
-      github: "https://github.com/your-repo-ember",
+      github: "https://github.com/harleenkaur13/Ember.git",
     },
     {
-      title: "ToDo",
+      title: "LP Detection",
       year: "2025",
       image: project2,
       github: "https://github.com/your-repo-todo",
@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Sentiment Analysis",
       year: "2025",
       image: project3,
-      github: "https://github.com/your-repo-sentiment",
+      github: "https://github.com/harleenkaur13/Echoes-Of-Emotions.git",
     },
   ];
 
