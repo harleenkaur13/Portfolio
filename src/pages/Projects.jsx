@@ -6,7 +6,7 @@ import { CometCard } from "../components/ui/comet-card";
 const Projects = () => {
   const projects = [
     {
-      title: "Ember",
+      title: "E-commerce website",
       year: "2025",
       image: project1,
       github: "https://github.com/harleenkaur13/Ember.git",
